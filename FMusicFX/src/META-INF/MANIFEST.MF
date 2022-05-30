@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Main-Class: com.tcgstudio.TCGStudio
+Class-Path: javafx-controls-11.0.2.jar javafx-media-17.0.0.1-win.jar htt
+  pclient-4.5.1.jar javafx-fxml-11.0.2.jar javafx-media-17.0.0.1.jar fas
+ t json2-extension-2.0.2.jar fastjson2-2.0.2.jar javafx-base-17.0.0.1-wi
+ n. jar javafx-base-17.0.0.1.jar commons-codec-1.9.jar javafx-graphics-1
+ 7.0 .0.1.jar commons-logging-1.2.jar javafx-fxml-11.0.2-win.jar javafx-
+ cont rols-11.0.2-win.jar fastjson-2.0.2.jar httpcore-4.4.3.jar javafx-g
+ raphi cs-17.0.0.1-win.jar
+

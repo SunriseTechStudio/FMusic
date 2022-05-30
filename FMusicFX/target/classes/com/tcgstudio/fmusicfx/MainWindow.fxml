@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600" minWidth="850" prefHeight="600" prefWidth="850" style="-fx-background-color: White;" styleClass="ViewUI" stylesheets="@FUI.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tcgstudio.fmusicfx.HelloController">
+   <children>
+      <Button layoutX="183.0" layoutY="15.0" mnemonicParsing="false" onAction="#SearchClick" >
+         <graphic>
+            <FontIcon iconColor="BLACK" iconLiteral="win11-search" iconSize="16" />
+         </graphic>
+      </Button>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="50.0" prefHeight="349.0" prefWidth="218.0" style="-fx-background-color: Grey;" />
+      <Slider fx:id="slider" layoutX="336.0" layoutY="415.0" onDragDetected="#dragEvent" onMouseReleased="#MusicGoTo" prefHeight="14.0" prefWidth="361.0" />
+      <TextField fx:id="title" layoutX="15.0" layoutY="16.0" text="Aimer" />
+      <Button layoutX="15.0" layoutY="407.0" mnemonicParsing="false" onAction="#OnPlayClick" prefHeight="30.0" prefWidth="218.0" text="播放" />
+      <Button layoutX="57.0" layoutY="457.0" mnemonicParsing="false" onAction="#PlayStop" prefHeight="30.0" prefWidth="76.0" text="暂停/继续">
+         <graphic>
+            <FontIcon iconColor="BLACK" iconLiteral="win11-play" iconSize="16" />
+         </graphic>
+      </Button>
+      <MediaView fx:id="Player" fitHeight="200.0" fitWidth="200.0" layoutX="574.0" layoutY="486.0" />
+   </children>
+</Pane>

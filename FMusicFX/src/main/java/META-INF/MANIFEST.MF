@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Main-Class: com.tcgstudio.fmusicfx.HelloApplication
+Class-Path: javafx-controls-11.0.2.jar javafx-media-17.0.0.1-win.jar htt
+ pclient-4.5.1.jar javafx-graphics-17.0.0.1.jar javafx-fxml-11.0.2.jar j
+ avafx-media-17.0.0.1.jar fastjson2-2.0.2.jar fastjson2-extension-2.0.2.
+ jar javafx-base-17.0.0.1.jar commons-codec-1.9.jar javafx-graphics-17.0
+ .0.1-win.jar commons-logging-1.2.jar javafx-fxml-11.0.2-win.jar javafx-
+ controls-11.0.2-win.jar fastjson-2.0.2.jar httpcore-4.4.3.jar javafx-ba
+ se-17.0.0.1-win.jar
+

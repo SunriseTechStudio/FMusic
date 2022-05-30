@@ -1,0 +1,260 @@
+.button {
+    -fx-border-radius: 5;
+    -fx-background-color: #ffffff;
+    -fx-border: 1px; 
+    -fx-border-color: #dcdfe6;
+    -fx-min-width: 50;
+    -fx-min-height: 30;
+}
+
+.button:hover {
+    -fx-background-color: #ecf5ff;
+    -fx-color: #409eff;
+}
+
+.button:pressed {
+    -fx-border: 1px; 
+    -fx-border-color: #3a8ee6;
+    -fx-text-fill: #409eff;
+}
+
+.menu-button {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #ffffff;
+    -fx-border: 1px; 
+    -fx-border-color: #dcdfe6;
+    -fx-min-width: 50;
+    -fx-min-height: 30;
+}
+
+.toggle-button{
+    -fx-border-radius: 5;
+    -fx-background-color: #ffffff;
+    -fx-border: 1px; 
+    -fx-border-color: #dcdfe6;
+    -fx-min-width: 50;
+    -fx-min-height: 30;
+}
+
+.toggle-button:hover {
+    -fx-background-color: #ecf5ff;
+    -fx-color: #409eff;
+}
+
+.button_base{
+    -fx-border-radius: 5;
+    -fx-background-color: #ffffff;
+    -fx-border: 1px; 
+    -fx-border-color: #dcdfe6;
+    -fx-min-width: 50;
+    -fx-min-height: 30;
+}
+
+.FUI_Btn:selected {
+    -fx-background-color: #3a8ee6;
+    -fx-border: 1px; 
+    -fx-border-color: #ecf5ff;
+}
+
+.default-theme {
+   -fx-background-color: #FFFFFF;
+   -fx-border-color: rgb(230, 230, 230);
+   -fx-text-fill: rgb(110, 110, 110);
+   -fx-background-radius: 6px;
+}
+
+.check-box {
+   -fx-background-color: #ffffff;
+}
+
+.check-box:pressed {
+    -fx-width: 13px;/*勾选框的大小*/
+    -fx-height: 13px;
+    -fx-background-color: #ffffff;
+    -fx-text-fill:#409eff;
+}
+
+.arrow-button {
+    -fx-background-color: #ffffff;
+}
+
+.combo-box-base {
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-background-color: #ffffff;
+    -fx-border: 1px; 
+    -fx-border-color: #dcdfe6;
+    -fx-min-height: 30px;
+}
+
+.box:hover {
+    -fx-background-color: #ecf5ff;
+    -fx-color: #409eff;
+    -fx-border: 1px; 
+    -fx-border-color: #3a8ee6;
+}
+
+
+.menu-item {
+    -fx-background-radius: 5px;
+    -fx-border: 1px; 
+    -fx-background-color: #ffffff;
+    -fx-border-insets: 3px;
+    -fx-border-radius: 5px;
+    -fx-min-height: 3px;
+}
+
+.menu-item:hover {
+    -fx-background-radius: 5px;
+    -fx-border: 1px; 
+    -fx-background-color: #3a8ee6;
+    -fx-border-radius: 5px;
+}
+
+.list-view {
+    -fx-border-radius: 9px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 9px;
+}
+
+.combo-box-popup {
+    -fx-border-radius: 9px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 9px;
+}
+
+.context-menu {
+    -fx-border-radius: 9px;
+    -fx-background-color: #ffffff;
+    -fx-border: 1px; 
+    -fx-border-color: #dcdfe6;
+    -fx-min-width: 100;
+}
+
+.progress-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}
+
+.bar {
+    -fx-border-radius: 4px;
+    -fx-background-radius: 6px;
+    -fx-background-color: #3a8ee6;
+}
+
+.thumb {
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color:  #4682B4;
+}
+
+.text-field {
+    -fx-border-radius: 9px;
+    -fx-border: 1px; 
+    -fx-border-color: #dcdfe6;
+    -fx-background-color: #ffffff;
+}
+
+.password-field {
+    -fx-border-radius: 9px;
+    -fx-border: 1px; 
+    -fx-border-color: #dcdfe6;
+    -fx-background-color: #ffffff;
+}
+.track {
+    -fx-background-color: #ffffff;
+    -fx-border: 2px; 
+    -fx-border-radius: 4px;
+    -fx-border-color: #3a8ee6;
+    -fx-background-radius: 8px;
+    -fx-max-height: 5px;
+}
+
+.radio {
+    -fx-border-color: #dcdfe6;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 10px;
+}
+
+.radio_button:pressed {
+    -fx-width: 13px;/*勾选框的大小*/
+    -fx-height: 13px;
+    -fx-background-color: #ffffff;
+    -fx-text-fill:#409eff;
+}
+
+.radio:hover {
+    -fx-background-color: #ecf5ff;
+    -fx-color: #409eff;
+    -fx-border: 1px; 
+    -fx-border-color: #3a8ee6;
+}
+
+.label {
+    -fx-font-family: Segoe UI;
+}
+
+.box {
+    -fx-border-color: #dcdfe6;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5px;
+}
+
+.ViewUI {
+    -fx-border-radius: 6px;
+    -fx-border-color: #dcdfe6;
+    -fx-border: 2px;
+    -fx-background-radius: 6px;
+}
+
+/*tabpane的代码*/
+
+/* 修改TabPane的Pane区域背景颜色 */
+.tab-pane {
+    
+    -fx-border-color: #dcdfe6;
+    -fx-border: 2px;
+    -fx-background-color: #e6e6e6;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+/* 修改Tab的背景颜色 */
+.tab {
+    -fx-background-color: #333333;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    
+}
+/* 修改顶栏的背景颜色 */
+.tab-pane>*.tab-header-area>*.tab-header-background
+{
+    -fx-background-color: -fx-outer-border, -fx-text-box-border, #333333;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+/* 修改Tab中文本的颜色 */
+.tab-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-family:Segoe UI;
+}
+/* 子代选择器，Tab选中的时候选择其子元素tab-label */
+.tab:selected .tab-label {
+    -fx-text-fill: #ffffff;
+}
+/* tab选中时设置背景颜色 */
+.tab:selected {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #3a8ee6;
+    -fx-border-color: #dcdfe6;
+    -fx-border: 2px;
+}
+/* Tab选中的时候选中其边框并修改样式 */
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-radius: 0px;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-color: #4d1a4dff;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
