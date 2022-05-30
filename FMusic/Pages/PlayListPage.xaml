@@ -1,0 +1,52 @@
+﻿<Page x:Class="FMusic.Pages.PlayListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FMusic.Pages"
+      xmlns:ui="http://schemas.modernwpf.com/2019"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PlayListPage">
+
+    <Grid>
+        <ListView x:Name="All" Margin="11,152,18,74" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ListView.Resources>
+                <Style TargetType="{x:Type GridViewColumnHeader}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </Style>
+            </ListView.Resources>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="500"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+        <StackPanel
+                        x:Name="Control1"
+                        Orientation="Horizontal" Height="66" VerticalAlignment="Bottom">
+            <ui:AppBarButton x:Name="play" Label="播放" Icon="Play" Click="Play_Click" />
+            <ui:AppBarButton x:Name="playadd" Label="添加到播放列表" Icon="Add" />
+            <ui:AppBarSeparator />
+            <ui:AppBarButton IsEnabled="False" x:Name="Delete" Label="删除歌曲" Icon="Delete"></ui:AppBarButton>
+            <ui:AppBarButton IsEnabled="False" x:Name="changedetil" Label="更改名称" Icon="Rename"></ui:AppBarButton>
+        </StackPanel>
+        <Grid x:Name="titlebck" Height="146" Margin="0,0,0,0" VerticalAlignment="Top">
+            <Image x:Name="CI" HorizontalAlignment="Left" Margin="10,10,0,10" Width="130"/>
+            <RichTextBox x:Name="introduce" Margin="150,9,9,44" BorderBrush="{x:Null}" Background="{x:Null}">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text="歌单简介"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <ui:NavigationViewItemSeparator Margin="-2,0,2,-13" Height="29" VerticalAlignment="Bottom"/>
+            <ui:FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE90B;" Margin="148,0,0,5" HorizontalAlignment="Left" Width="35" Height="32" VerticalAlignment="Bottom"></ui:FontIcon>
+            <TextBlock ToolTip="播放数量" x:Name="count" HorizontalAlignment="Left" FontFamily="SogoeUI" FontSize="18" Margin="192,0,0,4" TextWrapping="Wrap" Text="播放数量" VerticalAlignment="Bottom" Height="26" Width="139"/>
+            <ui:FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE95A;" Margin="338,0,0,6" HorizontalAlignment="Left" Width="35" Height="32" VerticalAlignment="Bottom"/>
+            <TextBlock ToolTip="创建人" x:Name="member" HorizontalAlignment="Left" FontFamily="SogoeUI" FontSize="18" Margin="382,0,0,5" TextWrapping="Wrap" Text="创建者" VerticalAlignment="Bottom" Height="26" Width="139"/>
+
+        </Grid>
+    </Grid>
+</Page>

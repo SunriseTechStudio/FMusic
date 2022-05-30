@@ -1,0 +1,79 @@
+﻿<Window x:Class="FMusic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FMusic"
+        mc:Ignorable="d"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        Title="FMusic" Height="550" Width="900" MinWidth="470" MinHeight="550" BorderThickness="4" Icon="headphone.ico">
+    <Grid Name="Background">
+
+        <ui:NavigationView Name="menu" Margin="0,0,0,70.5" ExpandedModeThresholdWidth="200" IsBackButtonVisible="Collapsed" PaneTitle="FMusic" PaneDisplayMode="Auto" SelectionChanged="Menu_SelectionChanged">
+            <ui:NavigationView.Style>
+                <Style>
+                    <Setter Property="ui:ScrollViewerHelper.AutoHideScrollBars" Value="True"></Setter>
+                </Style>
+            </ui:NavigationView.Style>
+            <ui:NavigationView.MenuItems>
+                <ui:NavigationViewItem Content="主页" >
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="Home"></ui:SymbolIcon>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Content="搜索" x:Name="SamplePage2Item"
+                                               SelectsOnInvoked="True">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="Find" />
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Content="本地音乐" x:Name="smp3">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="Play" />
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItemSeparator></ui:NavigationViewItemSeparator>
+            </ui:NavigationView.MenuItems>
+
+            <ui:Frame Name="shower" NavigationUIVisibility="Hidden" Margin="0,0,0,0.5" Background="{DynamicResource SystemControlPageBackgroundAltHighBrush}">
+                <ui:Frame.ContentTransitions>
+                    <ui:TransitionCollection>
+                        <ui:NavigationThemeTransition x:Name="Trans">
+                        </ui:NavigationThemeTransition>
+                    </ui:TransitionCollection>
+                </ui:Frame.ContentTransitions>
+            </ui:Frame>
+
+        </ui:NavigationView>
+
+        <Grid Height="70" Background="{DynamicResource SystemControlPageBackgroundAltHighBrush}" Name="musicfull" VerticalAlignment="Bottom" Margin="0,0,0,0.5" >
+            <Image x:Name="cw" Width="50" HorizontalAlignment="Left" Margin="10,11,0,9" />
+            <TextBlock ToolTip="点我前往歌手页" FontSize="18" HorizontalAlignment="Left" x:Name="Title" Text="" Width="160" Margin="69,7,0,8" Background="{x:Null}" FontFamily="Segoe UI" RenderTransformOrigin="0.5,0.5">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.383"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Button ToolTip="上一曲" Content="&#xE892;" FontSize="23" FontFamily="Segoe MDL2 Assets" x:Name="backPlay" Width="50" Background="{x:Null}" BorderBrush="{x:Null}" Margin="236,8,0,12" HorizontalAlignment="Left" VerticalAlignment="Stretch" Click="BackPlay_Click"/>
+
+            <Button ToolTip="播放/暂停" x:Name="play" Width="50" Margin="295,8,0,12" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Stretch" Click="Play_Click">
+                <ui:FontIcon FontSize="23" FontFamily="Segoe MDL2 Assets" Name="playIcon" Glyph="&#xE768;"/>
+            </Button>
+
+            <Button ToolTip="下一曲" x:Name="nextPlay" Content="&#xE893;" FontSize="23" FontFamily="Segoe MDL2 Assets" Margin="354,8,0,12" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" Width="50" VerticalAlignment="Stretch" Click="NextPlay_Click"/>
+
+            <Slider x:Name="sliderPosition" Thumb.DragStarted="SliderPosition_DragStarted" Thumb.DragCompleted="SliderPosition_DragCompleted" Margin="416,20,164,24" MinWidth="100" BorderBrush="Black" />
+
+            <Button ToolTip="更多" x:Name="More" Content="&#xE712;" FontSize="23" FontFamily="Segoe MDL2 Assets" Width="50" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0,8,7,12" HorizontalAlignment="Right" VerticalAlignment="Stretch"/>
+
+            <TextBlock TextAlignment="Center" x:Name="Time" Text="" Margin="0,20,65,18" Background="{x:Null}"  FontSize="18" FontFamily="Segoe UI" HorizontalAlignment="Right" Width="90"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
